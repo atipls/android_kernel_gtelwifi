@@ -18,6 +18,9 @@
 #include "zinitix_touch_t560.h"
 #include "zinitix_touch_t560_G1F.h"
 
+#undef TOUCH_BOOSTER
+#define TOUCH_BOOSTER 0
+
 #ifdef ZINITIX_ZT7554_USE_DUAL_FW
 static void zt7554_firmware_check(struct zt7554_ts_info *info)
 {
